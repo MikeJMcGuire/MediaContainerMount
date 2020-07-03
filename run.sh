@@ -2,7 +2,7 @@
 
 if [ -z "$DATA_MOUNT" ]; then
   echo "No mount specified."
-  exit
+  exit -1
 fi
 
 if [ -z "$(ls -A $DATA_MOUNT)" ]; then
