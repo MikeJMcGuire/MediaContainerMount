@@ -11,4 +11,6 @@ if [ -z "$(ls -A $DATA_MOUNT)" ]; then
   exit -1
 fi
 
+sleep $START_DELAY
+
 /init
