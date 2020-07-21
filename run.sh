@@ -11,6 +11,10 @@ if [ -z "$(ls -A $DATA_MOUNT)" ]; then
   exit -1
 fi
 
+echo "Mount available, sleeping..."
+
 sleep $START_DELAY
+
+echo "Starting..."
 
 /init
