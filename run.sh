@@ -11,8 +11,6 @@ if ! grep -qs $DATA_MOUNT /proc/mounts; then
   exit -1
 fi
 
-sleep 5
-
 if [ -z "$(ls -A $DATA_MOUNT)" ]; then
   echo "Waiting for files..."
   sleep 5
